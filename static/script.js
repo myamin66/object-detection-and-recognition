@@ -9,6 +9,17 @@ $(function () {
   });
 });
 
+
+$(function () {
+  // Model switch
+  $("a#hand-detect").bind("click", function () {
+    $.getJSON("/request_hand_switch", function (data) {
+      // do nothing
+    });
+    return false;
+  });
+});
+
 $(function () {
   // Flip horizontal switch
   $("a#flip-horizontal").bind("click", function () {

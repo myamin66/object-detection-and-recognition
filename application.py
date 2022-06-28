@@ -42,6 +42,12 @@ def request_preview_switch():
     print('*'*10, VIDEO.preview)
     return "nothing"
 
+@application.route('/request_hand_switch')
+def request_hand_switch():
+    VIDEO.hand = not VIDEO.hand
+    print('*'*10, VIDEO.hand)
+    return "nothing"
+
 @application.route('/request_flipH_switch')
 def request_flipH_switch():
     VIDEO.flipH = not VIDEO.flipH
